@@ -9,9 +9,9 @@
 <ol>
     @foreach (var item in Model)
     {
-        <li><a asp-action="Detail" asp-route-id="@item.Code">@item.Name</a></li>
+        <li><a asp-action="Detail" asp-route-id="@item.Code" class="list-group-item list-group-item-primary">@item.Name</a></li>
     }
 </ol>
 
-<a asp-action="Create">Nueva Peli</a>
-<a asp-action="Delete">Eliminar Peli</a>
+<a asp-action="Create" class="btn btn-success">Nueva Película</a>
+<a asp-action="Delete" class="btn btn-danger">Eliminar Película</a>
